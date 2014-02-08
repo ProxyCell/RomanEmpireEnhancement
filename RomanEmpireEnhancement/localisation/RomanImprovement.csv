@@ -1,0 +1,10 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+byzantine;Eastern Roman;Romain d'Orient;Oströmischen;;Romano de Oriente;;;;;;;;;x
+e_byzantium;Eastern Roman Empire;Empire romain d'Orient;Oströmischen Reiches;;Imperio Romano de Oriente;;;;;;;;;x
+e_byzantium_adj;Eastern Roman;romain d'Orient;oströmischen;;romano de Oriente;;;;;;;;;x
+e_wre;Western Roman Empire;Empire romain d'Occident;Weströmischen Reiches;;Imperio Romano de Occidente;;;;;;;;;;x;
+e_wre_adj;Western Roman;romain d'Occident;Weströmischen;;romano de Occidente;;;;;;;;;;x;
+restore_western_roman_empire;Restore the Western Roman Empire;Restaurer l'Empire romain d'Occident;Wiederherstellen des Weströmischen Reiches;;Restaurar el Imperio Romano de Occidente;;;;;;;;;x
+restore_western_roman_empire_desc;If Rome and other key territories of the old empire could be reclaimed, the Western Roman Empire would win recognition in the eyes of the East as the true and rightful continuation of the Roman State.;Si Rome et d'autres territoires clés de l'ancien empire pourraient être récupérés, l'Empire romain d'Occident allait gagner la reconnaissance dans les yeux de l'Est comme la continuation vrai et légitime de l'État romain.;Wenn Rom und anderen wichtigen Territorien des alten Reiches zurückgefordert werden könnte, würde das Weströmische Reich Anerkennung in den Augen des Ostens als die wahre und rechtmäßige Fortsetzung des römischen Staates zu gewinnen.;;Si Roma y otros territorios clave del antiguo imperio podrían ser recuperados, el Imperio Romano de Occidente ganaría reconocimiento a los ojos de Oriente como la continuación verdadero y legítimo del Estado romano.;;;;;;;;;x
+EVTTOOLTIP_WRE_RESTORED;The Western Roman Empire is restored.;L'Empire romain d'Occident est restauré.;Das Weströmischen Reich wurde wiederhergestellt.;;El Imperio Romano de Occidente está restablecido.;;;;;;;;;x
+EVTNAME_WRE_RESTORED;The Dawn of a New Era;L'Aube d'une Ère nouvelle;Der Aufbruch in eine neue Ära.;;El amanecer de una Nueva Era;;;;;;;;;x

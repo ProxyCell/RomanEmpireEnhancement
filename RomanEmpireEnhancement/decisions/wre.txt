@@ -1,0 +1,52 @@
+decisions = {
+	restore_western_roman_empire = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "Legacy of Rome"
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			OR = {
+				primary_title = { tier = KING }
+				primary_title = { tier = EMPEROR }
+			}
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
+		}
+		allow = {
+			prestige = 1500
+			completely_controls = d_latium
+			completely_controls = d_genoa
+			completely_controls = d_capua
+			completely_controls = d_lombardia
+			completely_controls = d_pisa
+			completely_controls = c_zadar
+			completely_controls = c_jerusalem
+			completely_controls = c_alexandria
+			completely_controls = c_tunis
+			completely_controls = c_provence
+			completely_controls = c_oberbayern
+			completely_controls = c_damascus
+			completely_controls = c_cairo
+			completely_controls = c_koln
+			completely_controls = c_coruna
+			completely_controls = c_asturias_de_oviedo
+			completely_controls = c_leon
+			completely_controls = c_lisboa
+			completely_controls = c_luxembourg
+			completely_controls = c_stettin
+			completely_controls = c_kent
+			completely_controls = c_middlesex
+			completely_controls = c_gowrie
+			completely_controls = c_gwynedd
+		}
+		effect = {
+			narrative_event = { id = LoR.912 tooltip = EVTTOOLTIP_WRE_RESTORED }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

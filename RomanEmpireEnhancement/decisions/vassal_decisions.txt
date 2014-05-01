@@ -200,7 +200,7 @@ vassal_decisions = {
 						}
 					}
 				}
-				piety = -100
+				piety = -50
 			}
 			hidden_tooltip = {
 				if = {

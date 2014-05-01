@@ -1,0 +1,272 @@
+decisions = {
+	mend_catholic_schism = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "Legacy of Rome"
+			age = 16
+			prisoner = no
+			war = no
+			NOT = { trait = incapable }
+			OR = {
+				has_landed_title = k_papal_state
+				has_landed_title = d_fraticelli
+			}
+			OR = {
+				religion = catholic
+				religion = fraticelli
+			}
+			is_heretic = no
+			NOT = { has_global_flag = schism_mended }
+			NOT = { has_global_flag = catholic_mended }
+			OR = {
+				k_orthodox = {
+					holder_scope = {
+						is_heretic = no
+					}
+				}
+				d_nestorian = {
+					holder_scope = {
+						is_heretic = no
+					}
+				}
+				d_monothelite = {
+					holder_scope = {
+						is_heretic = no
+					}
+				}
+				d_iconoclast = {
+					holder_scope = {
+						is_heretic = no
+					}
+				}
+			}
+		}
+		allow = {
+			piety = 4000
+			religion_authority = 1.0
+			c_byzantion = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_hagiasophia = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_antiocheia = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_antiocheia = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_jerusalem = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_jerusalem = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_alexandria = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_alexandria = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_roma = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_roma = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_ephesos = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_lebedos = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_atheniai = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_piraeaus = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_abydos = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_lampsakos = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_thessalonike = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_thesedessa = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_koln = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_koln = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_santiago = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_santiago = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			c_kent = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+			b_canterbury = {
+				holder_scope = {
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+					is_heretic = no
+				}
+			}
+		}
+		effect = {
+			narrative_event = { id = REE.5 tooltip = EVTTOOLTIP_CATHOLIC_MEND}
+			set_global_flag = catholic_mended
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

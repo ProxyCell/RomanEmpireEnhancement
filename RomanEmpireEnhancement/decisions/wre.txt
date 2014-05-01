@@ -2,6 +2,7 @@ decisions = {
 	restore_western_roman_empire = {
 		is_high_prio = yes
 		potential = {
+			NOT = { has_global_flag = wre_restored }
 			has_dlc = "Legacy of Rome"
 			age = 16
 			prisoner = no
@@ -43,6 +44,7 @@ decisions = {
 			completely_controls = c_gwynedd
 		}
 		effect = {
+			set_global_flag = wre_restored
 			narrative_event = { id = LoR.912 tooltip = EVTTOOLTIP_WRE_RESTORED }
 		}
 		ai_will_do = {

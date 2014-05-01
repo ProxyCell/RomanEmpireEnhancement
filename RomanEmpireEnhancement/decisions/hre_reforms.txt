@@ -1,0 +1,103 @@
+decisions = {
+	proclaim_erbkaisertum = {
+		is_high_prio = yes
+		potential = {
+			NOT = { has_global_flag = proclaimed_erbkaisertum }
+			age = 16
+			prisoner = no
+			war = no
+			NOT = { trait = incapable }
+			has_landed_title = e_hre
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				text = REE_OPINION_ABOVE_25
+				NOT = {
+					any_vassal = {
+						higher_tier_than = baron
+						NOT = { opinion = { who = liege value = 25 } }
+						prisoner = no
+					}
+				}
+			}
+			OR = {
+				e_hre = { crownlaw_title = { has_law = centralization_3 } }
+				e_hre = { crownlaw_title = { has_law = centralization_4 } }
+			}
+			prestige = 1500
+			piety = 500
+			completely_controls = e_hre
+			completely_controls = k_germany
+			completely_controls = k_bohemia
+			completely_controls = k_bavaria
+			completely_controls = k_frisia
+			completely_controls = k_lotharingia
+			completely_controls = d_saxony
+			completely_controls = d_meissen
+			completely_controls = d_brandenburg
+		}
+		effect = {
+			prestige = -1500
+			set_global_flag = proclaimed_erbkaisertum
+			character_event = { id = REE.2 tooltip = EVTTOOLTIP_HRE_REFORM }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	renovatio_imperii = {
+		is_high_prio = yes
+		potential = {
+			has_global_flag = proclaimed_erbkaisertum
+			NOT = { has_global_flag = renovatio_imperii }
+			age = 16
+			prisoner = no
+			war = no
+			NOT = { trait = incapable }
+			has_landed_title = e_hre
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				text = REE_OPINION_ABOVE_25
+				NOT = {
+					any_vassal = {
+						higher_tier_than = baron
+						NOT = { opinion = { who = liege value = 25 } }
+						prisoner = no
+					}
+				}
+			}
+			OR = {
+				e_hre = { crownlaw_title = { has_law = centralization_3 } }
+				e_hre = { crownlaw_title = { has_law = centralization_4 } }
+			}
+			prestige = 2000
+			piety = 500
+			completely_controls = e_hre
+			completely_controls = k_germany
+			completely_controls = k_bohemia
+			completely_controls = k_bavaria
+			completely_controls = k_frisia
+			completely_controls = k_lotharingia
+			completely_controls = d_saxony
+			completely_controls = d_meissen
+			completely_controls = d_brandenburg
+		}
+		effect = {
+			prestige = -2000
+			set_global_flag = renovatio_imperii
+			narrative_event = { id = REE.3 tooltip = EVTTOOLTIP_HRE_REFORM }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

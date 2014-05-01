@@ -1,0 +1,106 @@
+namespace = REE
+
+narrative_event = {
+	id = REE.5
+	title = REENAME5
+	desc = REEDESC5
+	picture = GFX_evt_icon
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAREE.5
+
+		if = {
+			limit = { religion = catholic }
+			set_parent_religion = { religion = orthodox parent = catholic }
+		}
+		if = {
+			limit = { religion = catholic }
+			set_parent_religion = { religion = nestorian parent = catholic }
+		}
+		if = {
+			limit = { religion = catholic }
+			set_parent_religion = { religion = monothelite parent = catholic }
+		}
+		if = {
+			limit = { religion = catholic }
+			set_parent_religion = { religion = iconoclast parent = catholic }
+		}
+		if = {
+			limit = { religion = fraticelli }
+			set_parent_religion = { religion = orthodox parent = fraticelli }
+		}
+		if = {
+			limit = { religion = fraticelli }
+			set_parent_religion = { religion = nestorian parent = fraticelli }
+		}
+		if = {
+			limit = { religion = fraticelli }
+			set_parent_religion = { religion = monothelite parent = fraticelli }
+		}
+		if = {
+			limit = { religion = fraticelli }
+			set_parent_religion = { religion = iconoclast parent = fraticelli }
+		}
+
+		set_global_flag = catholic_mended
+		give_nickname = nick_the_saint
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = orthodox
+					controls_religion = no
+				}
+				narrative_event = { id = REE.6 }
+			}
+		}
+		narrative_event = { id = REE.7 }
+	}
+}
+
+narrative_event = {
+	id = REE.6
+	title = REENAME5
+	desc = REEDESC5
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTAREE.6
+		ai_chance = { factor = 75 }
+		religion = FROM
+		any_courtier = {
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBREE.6
+		ai_chance = { factor = 25 }
+	}
+}
+
+narrative_event = {
+	id = REE.7
+	title = REENAME5
+	desc = REEDESC5
+	
+	picture = GFX_evt_icon
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	major_trigger = {
+		FROM = { owner = { NOT = { character = PREVPREV } } }
+	}
+		
+	option = {
+		name = EVTOPTAREE.5
+	}
+}

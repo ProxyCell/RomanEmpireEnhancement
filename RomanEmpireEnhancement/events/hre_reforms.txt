@@ -1,0 +1,81 @@
+namespace = REE
+
+character_event = {
+	id = REE.1
+	desc = "REEDESC1"
+	picture = GFX_evt_council
+
+	trigger = {
+		NOT = { has_global_flag = proclaimed_erbkaisertum }
+		has_landed_title = e_hre
+		NOT = { e_hre = { succession = feudal_elective } }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		e_hre = { succession = feudal_elective }
+	}
+
+	option = {
+		name = REEOPTA.1
+	}
+}
+
+character_event = {
+	id = REE.2
+	desc = "REEDESC2"
+	picture = GFX_evt_council
+	
+	is_triggered_only = yes
+
+	immediate = {
+		e_hre = { succession = gavelkind }
+	}
+	
+	option = {
+		name = REEOPTA.2
+	}
+}
+
+character_event = {
+	id = REE.3
+	desc = "REEDESC3"
+	picture = GFX_evt_council
+	
+	is_triggered_only = yes
+
+	immediate = {
+		e_hre = { add_law = centralization_4 }
+	}
+	
+	option = {
+		name = REEOPTA.3
+	}
+}
+
+character_event = {
+	id = REE.4
+	desc = "REEDESC4"
+	picture = GFX_evt_council
+	
+	trigger = {
+		has_global_flag = renovatio_imperii
+		has_landed_title = e_hre
+		NOT = { e_hre = { crownlaw_title = { has_law = centralization_4 } } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		e_hre = { add_law = centralization_4 }
+	}
+	
+	option = {
+		name = REEOPTA.3
+	}
+}
